@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: miFuente;
+    src: url(../assets/fonts/BrunoAceSC-Regular.ttf); /*ruta donde este la tipografia descargada*/
+}
+
+body{
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+
+header{
+    display: flex;
+    height:50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:#6B778D;
+}
+
+a{
+    font-family: miFuente;
+}
+.navBar{
+    display: flex;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar ul{
+    display: flex;
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.navBar ul li{
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a{
+    font-family: miFuente;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right:10px;
+} 
+
+nav a:hover{
+    color: white;
+}
+
+.titulo{
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h2{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 50px;
+    padding: 18px;
+}
+
+.section1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 img{
+    width: 100%;
+    height: 80%;
+}
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+}
+.images{
+    display: flex;
+    gap:20px;
+    background-color: #6D5D6E;
+}
+
+.img_1{
+    display: flex;
+    padding: 20px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img_2{
+    display: flex;
+    padding: 20px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img_3{
+    display: flex;
+    padding: 20px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img_1 img{
+    height: 330px;
+    width: 250px;
+    filter: brightness(60%);
+}
+.img_2 img{
+    height: 330px;
+    width: 250px;
+    filter: brightness(60%);
+}
+.img_3 img{
+    height: 330px;
+    width: 250px;
+    filter: brightness(60%);
+}
+
+.img_1 h4{
+    font-family: miFuente;
+}
+
+footer{
+    display: flex;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color:#6B778D;
+}
+
+.footerIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section_market{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section_market .images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros_back{
+    background-image: url(../assets/Section-2/Fondo.jpg);
+    height: 800px;
+    filter: brightness(90%);
+}
+
+.texto_us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    flex-direction: column;
+}
+
+.texto_us h5{
+    text-align: center;
+    font-size: medium;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.texto_us p{
+    text-align: center;
+    font-size: medium;
+    line-height: 40px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.bannerMarket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    background-image:url(../assets/Section-2/Fondo.jpg);
+    filter: brightness(90%);
+}
+
+.bannerMarket h2{
+    font-family: miFuente;
+    color: white;
+    font-size: 90px;
+}
