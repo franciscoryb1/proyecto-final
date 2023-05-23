@@ -10,7 +10,7 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: miFuente;
 }
 
 a{
@@ -26,77 +26,117 @@ a{
 }
 
 
+/* SECTION-1 */
+.d-item{
+    height: 500px;
+}
+.d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
 
 
-.section1{
+/* SECTION-2 */
+.section-2{
+    height: 700px;
+    padding-top: 20px;
     display: flex;
-    width: 100%;
+    justify-items: center;
+    align-items: center;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    background-image: url(../assets/Section-2/Fondo.jpg);
+}
+.container-1{
+    height: 500px;
+    width: 80%;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 
-.section1 img{
-    width: 100%;
-    height: 80%;
-}
-
-.section2{
+.container-1 .imagen-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: white;
+    align-items: center;
     justify-content: center;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
 }
-.images{
-    display: flex;
-    gap:20px;
-    background-color: #6D5D6E;
+.container-1 .imagen-1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.8);
+}
+.container-1 .imagen-1 a{
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    text-decoration: none;
 }
 
-.img_1{
+.container-1 .imagen-2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    padding: 20px;
-    justify-content: end;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.container-1 .imagen-2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.8);
 }
 
-.img_2{
+.container-1 .imagen-2 a{
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+.container-1 .imagen-3{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    padding: 20px;
-    justify-content: end;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.container-1 .imagen-3 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.8);
 }
 
-.img_3{
-    display: flex;
-    padding: 20px;
-    justify-content: end;
-    align-items: center;
-    flex-direction: column;
+.container-1 .imagen-3 a{
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    text-decoration: none;
 }
 
-.img_1 img{
-    height: 330px;
-    width: 250px;
-    filter: brightness(60%);
-}
-
-.img_2 img{
-    height: 330px;
-    width: 250px;
-    filter: brightness(60%);
-}
-.img_3 img{
-    height: 330px;
-    width: 250px;
-    filter: brightness(60%);
-}
-
-.img_1 h4{
-    font-family: miFuente;
-}
 
 
 /* FOOTER */
@@ -119,8 +159,6 @@ footer{
 
 
 /* MARKET */
-
-
 
 .section_market{
     display: flex;
@@ -237,4 +275,38 @@ h4{
 
 .footer_grids{
     grid-area: footer
+}
+
+
+
+/* @MEDIA */
+@media (max-width: 388px) { 
+    .section-2{
+        height: 1200px;}
+    .container-1{
+        height: 1000px;
+        width: 80%;
+        background-color: lightblue;
+        display: grid;
+        grid-template-columns: 1 1fr;
+        grid-template-rows: repeat(12, 1fr);
+    }
+    .container-1 .imagen-1{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    .container-1 .imagen-2{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 9;
+    }
+    .container-1 .imagen-3{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 9;
+        grid-row-end: 13;
+    }
 }

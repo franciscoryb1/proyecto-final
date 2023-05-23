@@ -11,63 +11,96 @@
 </head>
 
 <body>
-
+  <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
-            <img class="logo-kotk" src="./assets/logos/icon_kotk.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Nuestros productos
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./pages/remeras.html">Remeras</a></li>
-                      <li><a class="dropdown-item" href="./pages/hoodies.html">Hoodies</a></li>
-                      <li><a class="dropdown-item" href="./pages/pantalones.html">Pantalones</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                  </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-secondary" type="submit">Search</button>
-            </form>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img class="logo-kotk" src="./assets/logos/icon_kotk.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nuestros productos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./pages/remeras.html">Remeras</a></li>
+                    <li><a class="dropdown-item" href="./pages/hoodies.html">Hoodies</a></li>
+                    <li><a class="dropdown-item" href="./pages/pantalones.html">Pantalones</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </header>
+
 
 
 
     <main>
-        <section class="section1">
-            <img src="./assets/section1/section_1.png" alt="">
-        </section>
-
-        <section class="section2">
-            <div class="img_1">
-                <a href="./pages/remeras.html"><img src="./assets/remeras/remeraBlanca.png" alt=""></a>
-                <a href="./pages/remeras.html"><h3>Remeras</h3></a>
+      <section class="section-1">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active d-item">
+              <img src=".//assets/section1/section_1.png" class="d-block w-100 d-img" alt="slider 1">
             </div>
-            <div class="img_2">
-                <a href="./pages/hoodies.html"><img src="./assets/hoodies/hoodie_negro.png" alt=""></a>
-                <a href="./pages/hoodies.html"><h3>Hoodies</h3></a>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
             </div>
-            <div class="img_3">
-                <a href="./pages/pantalones.html"><img src="./assets/pantalones/pantalonBeige.png" alt=""></a>
-                <a href="./pages/pantalones.html"><h3>Pantalones</h3></a>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
             </div>
-        </section>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+  
+      <section class="section-2">
+        <div class="container-1">
+  
+            <div class="imagen-1">
+              <img class="img-sec-1" src="./assets/remeras/chomaBlanca.png" alt="">
+              <a href=""><p>Remeras</p></a>
+            </div>
+  
+            <div class="imagen-2">
+              <img class="img-sec-1" src="./assets/hoodies/kotk_beige.png" alt="">
+              <a href=""><p>Hoodies</p></a>
+            </div>
+  
+            <div class="imagen-3">
+              <img class="img-sec-1" src="./assets/pantalones/pantalonBeige.png" alt="">
+              <a href=""><p>Pantalones</p></a>
+            </div>
+  
+        </div>
+      </section>
     </main>
     <footer>
         <div class="footerIcons">
