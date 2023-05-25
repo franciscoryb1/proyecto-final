@@ -39,6 +39,7 @@ a{
 .section-2{
     height: auto;
     padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -144,7 +145,8 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color:#6B778D;
+    padding-top: 20px;
+    background-color:#ECF8F9;
 }
 
 .footerIcons{
@@ -158,16 +160,18 @@ footer{
 /* MARKET */
 
 .gallery{
-    height: 1000px;
+    height: auto;
     width: 100%;
+    padding-top: 20px;
     display: flex;
+    padding-bottom: 20px;
     justify-content: center;
     align-items: center;
     background-color: #DDE6ED;
 }
 
 .gallery div{
-    height: 90%;
+    height: 80%;
     width: 95%;
     background-color:#ECF8F9;
     display: grid;
@@ -188,6 +192,7 @@ footer{
 .gallery .market- .product img{
     height: 90%;
     width: 90%;
+    padding-bottom: 5px;
 }
 
 .gallery .market- .product h4{
