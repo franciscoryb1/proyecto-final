@@ -3,21 +3,19 @@
     padding: 0 ;
     box-sizing: border-box;
 }
-
 @font-face{
     font-family: miFuente;
     src: url(../assets/fonts/BrunoAceSC-Regular.ttf); /*ruta donde este la tipografia descargada*/
 }
-
 body{
     font-family: miFuente;
 }
-
 a{
     text-decoration: none;
     color:black;
     font-family: miFuente;
 }
+
 
 /* LOGO HEADER */
 .logo-kotk{
@@ -39,7 +37,7 @@ a{
 
 /* SECTION-2 */
 .section-2{
-    height: 700px;
+    height: auto;
     padding-top: 20px;
     display: flex;
     justify-items: center;
@@ -138,7 +136,6 @@ a{
 }
 
 
-
 /* FOOTER */
 
 footer{
@@ -160,48 +157,47 @@ footer{
 
 /* MARKET */
 
-.section_market{
+.gallery{
+    height: 1000px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: white;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.section_market .images{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: white;
-    justify-content: center;
-}
-
-.img_product{
-    display: flex;
-    padding: 20px;
-    justify-content: end;
     align-items: center;
-    flex-direction: column;
+    background-color: #DDE6ED;
 }
 
-.img_product img{
-    height: 330px;
-    width: 250px;
-    filter: brightness(60%);
+.gallery div{
+    height: 90%;
+    width: 95%;
+    background-color:#ECF8F9;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
-.img_product h4{
-    font-family: miFuente;
-}
-
-h4{
+.gallery .market- .product{
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
 }
 
+.gallery .market- .product img{
+    height: 90%;
+    width: 90%;
+}
+
+.gallery .market- .product h4{
+    font-size: 13px;
+    text-align: center;
+}
+
+
+
+/* NOSOTROS */
 .nosotros_back{
     background-image: url(../assets/Section-2/Fondo.jpg);
     height: 800px;
@@ -231,58 +227,47 @@ h4{
     padding-bottom: 20px;
 }
 
-.bannerMarket{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:300px;
-    background-image:url(../assets/Section-2/Fondo.jpg);
-    filter: brightness(90%);
-}
 
-.bannerMarket h2{
-    font-family: miFuente;
-    color: white;
-    font-size: 90px;
-}
-
-.hero{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-areas: 
-    "header header  header  header  header  header  header  header"
-    "header header  header  header  header  header  header  header"
-    "main   main    main    main    main    main    main    main"
-    "main   main    main    main    main    main    main    main"
-    "main   main    main    main    main    main    main    main"
-    "main   main    main    main    main    main    main    main"
-    "main   main    main    main    main    main    main    main"
-    "main   main    main    main    main    main    main    main"
-    "footer footer  footer  footer  footer footer  footer  footer"
-    "footer footer  footer  footer  footer footer  footer  footer";
-}
-
-.header_grids{
-    grid-area: header;
-}
-
-.main_grids{
-    grid-area: main
-}
-
-.footer_grids{
-    grid-area: footer
-}
-
-
-
-/* @MEDIA */
 @media (max-width: 388px) { 
+
+    /* MARKET */
+    .gallery .market-{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    
+}
+
+@media (max-width: 744px){
+
+    SECTION-2
+    .container-1 .imagen-1 a{
+        font-size: 2rem;
+    }
+    .container-1 .imagen-2 a{
+        font-size: 2rem;
+    }
+    .container-1 .imagen-3 a{
+        font-size: 2rem;
+    }
+    
+        /* MARKET */
+    .gallery div{
+        height: 95%;
+        width: 95%;
+        background-color:#ECF8F9;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+}
+}
+
+
+@media (max-width: 990px) { 
+    /* SECTON-2 */
     .section-2{
-        height: 1200px;}
+        padding-bottom: 20px;}
+
     .container-1{
         height: 1000px;
         width: 80%;
@@ -310,3 +295,4 @@ h4{
         grid-row-end: 13;
     }
 }
+
