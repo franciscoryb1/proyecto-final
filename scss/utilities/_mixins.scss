@@ -1,0 +1,18 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@mixin imagenes_index{
+    background-color: white;
+    @include flex;
+    padding: 10px; }
+
+@mixin grid($column_start, $column_end, $row_start, $row_end){
+    grid-column-start: $column_start;
+    grid-column-end: $column_end;
+    grid-row-start: $row_start;
+    grid-row-end: $row_end;
+}

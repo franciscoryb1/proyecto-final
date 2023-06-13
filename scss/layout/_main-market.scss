@@ -1,0 +1,43 @@
+.gallery{
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include flex;
+    background-image:$fondo_color;
+    .market-{
+        height: 80%;
+        width: 95%;
+        background-color:#ECF8F9;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4, 1fr);
+        .product{
+            height: 100%;
+            width: 100%;
+            @include flex;
+            flex-direction: column;
+            padding-top: 20px;
+            img{
+                height: 90%;
+                width: 90%;
+                padding-bottom: 5px;
+                filter: brightness(0.9);
+            }
+            img:hover{
+                filter: brightness(1);
+            }
+            a{
+                text-decoration: none;
+                font-size: 13px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+/* FOOTER */
+
+footer{
+    display: flex;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 20px;
+    background-color:#ECF8F9;
+    .footerIcons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
