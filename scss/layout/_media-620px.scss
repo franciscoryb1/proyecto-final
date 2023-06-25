@@ -1,0 +1,14 @@
+@media (max-width: 620px) {
+    .nosotros_back{
+        height: 1200px;
+    }
+
+    .gallery{
+        .market-{
+            height: 95%;
+            width: 95%;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+    }
+}
+}

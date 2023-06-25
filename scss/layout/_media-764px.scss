@@ -1,9 +1,26 @@
 @media (max-width: 764px){
-
-    /* SECTION-2 */
-    .container-1 .imagen-1 a{
-        font-size: 2rem;
-    }
+    // /* SECTION-2 */
+    // .container-1{
+    //     .imagen-1{
+    //         a{
+    //             font-size: 2rem;
+    //         }
+    //     }
+    // }
+    // .container-1{
+    //     .imagen-1{
+    //         a{
+    //             font-size: 2rem;
+    //         }
+    //     }
+    // }
+    // .container-1{
+    //     .imagen-1{
+    //         a{
+    //             font-size: 2rem;
+    //         }
+    //     }
+    // }}
     .container-1 .imagen-2 a{
         font-size: 2rem;
     }
@@ -12,12 +29,14 @@
     }
     
         /* MARKET */
-    .gallery div{
+    .gallery{
+        .market-{
         height: 95%;
         width: 95%;
         background-color:#ECF8F9;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
         grid-template-rows: auto;
+}
 }
 }

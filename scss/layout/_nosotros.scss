@@ -1,0 +1,26 @@
+/* NOSOTROS */
+.nosotros_back{
+    background-image: url(../assets/Section-2/Fondo.jpg);
+    height: 800px;
+    filter: brightness(90%);
+    .texto_us{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px;
+        flex-direction: column;
+        .texto_us h5{
+            text-align: center;
+            font-size: medium;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+        .texto_us p{
+            text-align: center;
+            font-size: medium;
+            line-height: 40px;
+            color: black;
+            padding-bottom: 20px;
+        }
+    }
+}

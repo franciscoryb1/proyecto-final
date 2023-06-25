@@ -1,3 +1,7 @@
+// main{
+//     min-height: 100vh;
+// }
+
 .gallery{
     height: auto;
     width: 100%;
@@ -11,7 +15,7 @@
         background-color:#ECF8F9;
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         .product{
             height: 100%;
             width: 100%;

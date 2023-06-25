@@ -1,32 +1,29 @@
-@media (max-width: 1024px) { 
-    /* SECTON-2 */
+@media (max-width: 1024px) {
     .section-2{
-        padding-bottom: 20px;}
-
-    .container-1{
-        height: 1000px;
-        width: 80%;
-        background-color: lightblue;
-        display: grid;
-        grid-template-columns: 1 1fr;
-        grid-template-rows: repeat(12, 1fr);
-    }
-    .container-1 .imagen-1{
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 1;
-        grid-row-end: 5;
-    }
-    .container-1 .imagen-2{
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 5;
-        grid-row-end: 9;
-    }
-    .container-1 .imagen-3{
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 9;
-        grid-row-end: 13;
+        .container-1{
+            height: 1000px;
+            width: 80%;
+            display: grid;
+            grid-template-columns: 1 1fr;
+            grid-template-rows: repeat(12, 1fr);
+            .imagen-1{
+                grid-column-start: 1;
+                grid-column-end: 7;
+                grid-row-start: 1;
+                grid-row-end: 5;
+            }
+            .imagen-2{
+                grid-column-start: 1;
+                grid-column-end: 7;
+                grid-row-start: 5;
+                grid-row-end: 9;
+            }
+            .imagen-3{
+                grid-column-start: 1;
+                grid-column-end: 7;
+                grid-row-start: 9;
+                grid-row-end: 13;
+            }
+        }
     }
 }
